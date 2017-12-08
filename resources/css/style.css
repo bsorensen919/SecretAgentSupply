@@ -44,26 +44,22 @@ html {
     font-weight: bold;
 }
 
-nav {
+.menu, .menu-small {
     background-color: firebrick;
     color: white;
     display: flex;
     justify-content: space-between;
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
+    width: 100%;
 }
 
-.products {
-    display: flex;
-    justify-content: space-between;
-}
 
 .item {
     display: flex;
     flex-direction: column;
     width: 30%;
     border: solid black 4px;
-    margin-top: 3rem;
 }
 
 .item-pic {
@@ -77,6 +73,63 @@ nav {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
 }
+
+.container-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+}
+
+.location, .hours {
+    margin-bottom: 4rem;
+    width: 35%;
+
+}
+
+.title-location, .title-hours {
+    padding-left: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+footer {
+    height: 5rem;
+    color: white;
+    background-color: black;
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+
+.menu-small {
+    display: none;
+}
+
+@media only screen and (max-width: 480px) {
+    .glasses {
+        display: none;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menu-small {
+        display: inline;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .watch {
+        display: none;
+    }
+}
+
+
+
+
+
+
 
 div {
     border: solid 1px green;
