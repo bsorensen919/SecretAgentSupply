@@ -77,7 +77,13 @@ html {
 .container-section {
     display: flex;
     justify-content: space-between;
+    /*
     margin-top: 3rem;
+    */
+
+    max-width: 960px;
+    margin: 0 auto;
+
 }
 
 .location, .hours {
